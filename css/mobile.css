@@ -1,7 +1,13 @@
 .mobile-logo{
     display: none;
+    width: 50%;
+    height: 50%;
+    transform: translate(10%,10%);
 }
 .mobile-logo img{
+    border: 1px solid #FFBF00 ;
+    background-color: #EEEEEE;
+    border-radius: 50%;
     width: 50%;
     height: 50%;
     transform: translate(-35%,-20%);
