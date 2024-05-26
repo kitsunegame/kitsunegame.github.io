@@ -1,3 +1,16 @@
+.mobile-logo{
+    display: none;
+}
+.mobile-logo img{
+    width: 50%;
+    height: 50%;
+    transform: translate(-35%,-20%);
+}
+
+.mobile-container{
+    display: none;
+}
+
 @media screen and (max-width:1140px) {
     .header{
         display: none;
@@ -9,7 +22,9 @@
         background-position: top center;
         background-size: cover;
     }   
-    
+    .mobile-logo {
+        display: block;
+    }
    
     
 }
