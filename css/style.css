@@ -1078,9 +1078,16 @@ section {
     }
     .image-cover{
         background-position: top center;
-        background-size: 100vw auto;
-        height: 70rem;
+        background-size: 150vw auto;
+        height: 100rem;
         padding: 40px;
+    }
+    .image-cover .t-tag{
+        display: grid;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 60px;
+
     }
     .game{
         margin-bottom: 100px;
