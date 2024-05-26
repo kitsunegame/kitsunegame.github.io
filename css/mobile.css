@@ -1,0 +1,30 @@
+@media screen and (max-width:1140px) {
+    .header{
+        display: none;
+    }
+    .gallery-wrap{
+        display: none;
+    }
+    .image-cover{
+        background-position: top center;
+        background-size: cover;
+    }   
+    
+   
+    
+}
+
+@media screen and (max-width:550px) {
+    .image-cover{
+        height: 50rem;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+    .image-cover{
+        height: 20rem;
+        
+    }
+    
+}

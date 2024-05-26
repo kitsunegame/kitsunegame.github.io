@@ -1069,28 +1069,3 @@ section {
 
 
    
-@media screen and (max-width:1140px) {
-    .header{
-        display: none;
-    }
-    .gallery-wrap{
-        display: none;
-    }
-    .image-cover{
-        background-position: top center;
-        background-size: cover;
-        border: 1px solid;
-    }   
-    .game{
-        margin-bottom: 100px;
-    }
-   
-    
-}
-
-@media screen and (max-width:550px) {
-    .image-cover{
-        height: 50rem;
-    }
-    
-}
