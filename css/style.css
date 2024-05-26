@@ -58,8 +58,6 @@ html::-webkit-scrollbar-thumb {
 
 }
 
-
-
 body{
     background: hsl(50 67% 59%);
     font-family: "Open Sans", sans-serif;
@@ -245,10 +243,6 @@ section {
     cursor: pointer;
     
 }
-
-
-
-
 
 
 .heading{
@@ -547,25 +541,19 @@ section {
 
 
 /*! about start */
+.row {
+    text-align:center
+
+}
 
 .about .row{
-
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    display:grid;
 
 }
 
 
-.about .row  .image {
 
-   flex:1 1 15rem;
-   margin-left: 10rem;
-
-
-}
 
 .about .row  img {
 
@@ -584,9 +572,8 @@ section {
 }
 
 .about .row  .content {
-
-    flex:1 1 55rem;
-    padding: 20px;
+    
+    grid-row: 1 span 2;
  
  }
 
@@ -1082,3 +1069,22 @@ section {
 
 
    
+   @media screen and (max-width:1140px) {
+    .header{
+        display: none;
+    }
+    .gallery-wrap{
+        display: none;
+    }
+    .image-cover{
+        background-position: top center;
+        background-size: 100vw auto;
+        height: 70rem;
+        padding: 40px;
+    }
+    .game{
+        margin-bottom: 100px;
+    }
+   
+    
+}
