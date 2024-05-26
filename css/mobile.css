@@ -1,8 +1,6 @@
 .mobile-logo{
     display: none;
-    width: 50%;
-    height: 50%;
-    transform: translate(10%,10%);
+
 }
 .mobile-logo img{
     border: 1px solid #FFBF00 ;
