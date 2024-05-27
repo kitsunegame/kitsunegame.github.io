@@ -6,9 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>kitSuneGames</title>
@@ -21,22 +19,30 @@
     
     <div class="image-cover"> 
         <a href="#" class="mobile-logo" >
-                
             <img src="./image/logo1.png" alt="logo" />
         </a>
-        <i class="fas fa-wrench fa-spin" style="display: grid; text-align: center; font-size: 100px; color:blueviolet;"></i>
-        <nav class="m-navbar" style="display: none;">
+
+        <nav class="m-navbar" id="mobile-bar">
             <a href="#" class="active" id="main">Ana Sayfa</a>
             <a href="#" id="about">Hakkımızda</a>
             <a href="#" title="Musteri yorumlarini okuyun" id="comment">Yorumlar</a>
             <a href="#" id="connect">İletişim</a>
+            <img src="./image/logo1.png" class="m-logo" width="350" height="350">
         </nav>
-        <a href="javascript:void(0);" class="icon" style="display: none;">
-            <i class="fas fa-bars fa-lg" style="color: #FFBF00;"></i>
-        </a>
 
+        <a href="javascript:void(0);" class="nav-tag" id="nav-open" >
+            <div class="bar1"> </div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </a>
+        <a href="javascript:void(0);" class="nav-tag" id="nav-close" >&times;</a>
+        <!--
+            <a href="javascript:void(0);" class="navicon" >
+            <i class="fas fa-times" style="color: #FFD43B;"></i>
+        </a>
+        -->
         <header class="header">
-            
+            <img class="logo" src="./image/logo1.png">
             <nav class="navbar">
                 <a href="#" class="active" id="main">Ana Sayfa</a>
                 <a href="#" id="about">Hakkımızda</a>

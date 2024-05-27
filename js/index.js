@@ -50,17 +50,42 @@ con.addEventListener("click",()=>{
 
 
 
-/*document.getElementById("send").addEventListener("click", function(event) {
-    event.preventDefault(); // Sayfanın yeniden yüklenmesini engellemek için formun varsayılan davranışını durduruyoruz
-    // Form verilerini alıyoruz
-    var name = document.getElementById("name");
-    var email = document.getElementById('email');
-    var text = document.getElementById('text');
-    
-    // Verileri konsola yazdırıyoruz
-    console.log('Name:', name.value);
-    console.log('Email:', email.value);
-    console.log('Text:', text.value);
+let openbtn=document.getElementById("nav-open")
+let closebtn=document.getElementById("nav-close")
 
-    
-});*/
+let mobileBar=document.getElementById("mobile-bar")
+
+openbtn.addEventListener("click",()=>{
+    openbtn.style="display:none;"
+    mobileBar.style="display:block;"
+    closebtn.style="display:block;"
+})
+
+closebtn.addEventListener("click",()=>{
+    openbtn.style="display:block;"
+    mobileBar.style="display:none;"
+    closebtn.style="display:none;"
+})
+
+mobileBar.addEventListener("click",()=>{
+    mobileBar.style="display:none;"
+    closebtn.style="display:none;"
+    openbtn.style="display:block;"
+})
+
+var prevScrollpos=window.pageYOffset;
+
+window.onscroll=function(){
+    var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+        mobileBar.style="display:none;"
+        closebtn.style="display:none"
+  } 
+  else {
+    mobileBar.style="display:none;"
+    closebtn.style="display:none"
+    openbtn.style="display:block;"
+  }
+  prevScrollpos = currentScrollPos;
+}
+
