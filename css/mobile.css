@@ -25,7 +25,7 @@
 .m-logo{
     display: grid;
     margin: 0 auto;
-    transform: translateY(5rem);
+    transform: translateY(-3rem);
 }
 
 .m-navbar a{
